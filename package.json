@@ -1,0 +1,46 @@
+{
+  "name": "discord-oop",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Opinionated TypeScript utilities and enums built on top of discord.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:clean": "rm -rf dist && tsc",
+    "dev": "tsc --watch",
+    "prepare": "pnpm run build"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "typescript",
+    "wrapper",
+    "bot"
+  ],
+  "author": "Vi & Rook",
+  "license": "MIT",
+  "peerDependencies": {
+    "discord.js": "^14.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=24.14.0"
+  }
+}
