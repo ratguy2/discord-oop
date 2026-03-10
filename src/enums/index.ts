@@ -14,30 +14,6 @@ export enum LogLevel {
 }
 
 /**
- * Example enum: Types of moderation actions for logging/tracking
- */
-export enum ModerationAction {
-  Kick = 'kick',
-  Ban = 'ban',
-  Timeout = 'timeout',
-  Warn = 'warn',
-  Unban = 'unban',
-  Untimeout = 'untimeout'
-}
-
-/**
- * Example enum: Preferred channel types for automated posts
- * (Pick a specific subset of channel types your bot will use)
- */
-export enum BotChannelType {
-  Announcements = 'announcements',
-  Rules = 'rules',
-  Welcome = 'welcome',
-  Logs = 'logs',
-  General = 'general'
-}
-
-/**
  * Example enum: Time units for duration parsing
  */
 export enum TimeUnit {
@@ -47,5 +23,3 @@ export enum TimeUnit {
   Days = 'd',
   Weeks = 'w'
 }
-
-// Add more enums as your bot's domain requires!

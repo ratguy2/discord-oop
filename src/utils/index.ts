@@ -2,7 +2,7 @@
  * Utility functions that wrap or extend discord.js functionality
  */
 
-import { Channel, Guild, TextChannel } from 'discord.js';
+import { type Channel, Guild, TextChannel } from 'discord.js';
 
 /**
  * Example utility: Safely get a text channel by ID
@@ -18,5 +18,3 @@ export function getTextChannel(guild: Guild, channelId: string): TextChannel | n
 export function isThread(channel: Channel): boolean {
   return channel.isThread();
 }
-
-// Add more utilities as you need them!
